@@ -84,7 +84,7 @@ class Main:
                     if msg['method'] == 'heartbeat':
                         await self.heartbeat_response()
                     if msg['method'] == 'subscription':
-                        #TODO: To be persisted
+                        #TODO: To be sent to the persisting system
                         data = msg['params']['data']
                         print(data)
 
